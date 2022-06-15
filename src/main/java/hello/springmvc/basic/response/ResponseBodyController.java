@@ -15,6 +15,9 @@ import java.io.IOException;
 @Slf4j
 @Controller
 //@RestController
+/**
+ * @RestController = @ResponseBody + @Controller
+ */
 public class ResponseBodyController {
     @GetMapping("/response-body-string-v1")
     public void responseBodyV1(HttpServletResponse response) throws IOException {
